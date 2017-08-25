@@ -50,7 +50,7 @@ namespace CPE200Lab1
                         // split between integer part and fractional part
                         parts = result.ToString().Split('.');
                         // if integer part length is already break max output, return error
-                        if(parts[0].Length > maxOutputSize)
+                        if(parts[0].Length > maxOutputSize)//เกินmaxOutputSizeไม่ได้
                         {
                             return "E";
                         }
@@ -76,7 +76,7 @@ namespace CPE200Lab1
 
         private void btnNumber_Click(object sender, EventArgs e)
         {
-            if (lblDisplay.Text is "Error")
+            if (lblDisplay.Text is "Error")//เช็คว่า 
             {
                 return;
             }
@@ -98,7 +98,7 @@ namespace CPE200Lab1
             {
                 lblDisplay.Text = "";
             }
-            lblDisplay.Text += digit;
+            lblDisplay.Text += digit;// digitดึงมาจากText
             isAfterOperater = false;
         }
 
@@ -226,6 +226,11 @@ namespace CPE200Lab1
                     lblDisplay.Text = "0";
                 }
             }
+        }
+
+        private void lblDisplay_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
