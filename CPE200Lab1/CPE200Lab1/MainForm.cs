@@ -85,6 +85,8 @@ namespace CPE200Lab1
                 case "X":
                 case "÷":
                 case "√":
+                case "1 / X":
+                    
                     firstOperand = lblDisplay.Text;
                     isAfterOperater = true;
                     break;
@@ -200,6 +202,11 @@ namespace CPE200Lab1
         {
             ///...........
             ///pppp
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

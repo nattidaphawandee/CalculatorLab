@@ -53,10 +53,12 @@ namespace CPE200Lab1
                 case "%":
                     Double percentage;
                     percentage = Convert.ToDouble(firstOperand);
-                    a = percentage / 100;
+                    a = percentage * 0.01 ;
                     lblDisplay = System.Convert.ToString(a);
                     return (Convert.ToDouble(lblDisplay)).ToString();
-                   
+                case "1/X":
+                    return (Convert.ToDouble(1) / Convert.ToDouble(secondOperand)).ToString();
+
             }
             return(operate);
         }
