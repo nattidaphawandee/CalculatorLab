@@ -16,6 +16,7 @@ namespace CPE200Lab1
 
         protected bool isOperator(string str)
         {
+
             switch(str) {
                 case "+":
                 case "-":
